@@ -1,6 +1,6 @@
 [user]
-  name = Felippe Nardi
-  email = felippe@nardi.me
+  name = Christoph Kepper
+  email = christoph.kepper@pediapress.com
 [credential]
   helper = cache --timeout=360000
 [core]
