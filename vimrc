@@ -107,12 +107,23 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+
+" ---------------------------
+" Python auto-complete
+" ---------------------------
+"Plugin 'klen/python-mode'
+Plugin 'python-mode/python-mode'
+Plugin 'Valloric/YouCompleteMe'
+"Plugin 'klen/rope-vim'
+"Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
+
 " ---------------------------
 "  Code Folding
 " ---------------------------
 Plugin 'tmhedberg/SimpylFold'
 " Enable folding
-set foldmethod=indent
+autocmd FileType python set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
@@ -152,7 +163,7 @@ syntax on
 " ---------------------------
 "  Color Scheme
 " ---------------------------
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 " ---------------------------
 "  File Browsing
@@ -189,13 +200,30 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+
+"autocomplete
+let g:ycm_autoclose_preview_window_after_completion=1
+
+"custom keys
+let mapleader=" "
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
+
+" Wrap text after a certain number of characters
+au BufRead,BufNewFile *.py,*.pyw, set textwidth=100
+
+" PEP8
+let g:pymode_options_max_line_length = 100
+
 " default encoding to UTF-8
 set encoding=utf-8
+
+" I don't like swap files
+set noswapfile
 
 " enable line numbers
 set nu
 
 " color scheme
-
 set background=dark
-colorscheme solarized
+" colorscheme solarized
