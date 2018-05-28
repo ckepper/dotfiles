@@ -149,6 +149,8 @@ au BufNewFile,BufRead *.js, *.html, *.css, *.yml
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
+Plugin 'ambv/black'
+
 " ---------------------------
 "  Syntax Highlighting
 " ---------------------------
