@@ -229,3 +229,4 @@ set nu
 " color scheme
 set background=dark
 " colorscheme solarized
+set clipboard=unnamed
