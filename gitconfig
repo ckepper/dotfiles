@@ -1,11 +1,16 @@
 [user]
   name = Christoph Kepper
   email = christoph.kepper@pediapress.com
+[includeIf "gitdir:~/repos/upp/"]
+  path = ~/repos/dotfiles/gitconfig-lulu
+[includeIf "gitdir:~/repos/lulu/"]
+  path = ~/repos/dotfiles/gitconfig-lulu
 [credential]
   helper = cache --timeout=360000
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
+  autoclrf = input
 [diff]
   tool = vimdiff
 [merge]
@@ -13,7 +18,7 @@
 [difftool]
   prompt = false
 [color]
-  ui = true
+  ui = auto
 [alias]
   lol = log --graph --decorate --pretty=tformat:'%C(blue)%h%Creset%C(yellow bold)%d%Creset %s %C(green)(%ar)%Creset %C(cyan)%an%Creset'
   st = status
@@ -28,5 +33,5 @@
 	default = simple
 [url "https://github"]
 	insteadOf = git://github
-[init]
-	templatedir = ~/.git_template
+[fetch]
+	prune = true
