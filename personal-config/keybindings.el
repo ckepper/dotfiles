@@ -2,4 +2,5 @@
 (global-set-key (kbd "C-c n") 'deft)
 
 ;; set Alt to act like it usually does in OSX
-(setq ns-right-alternate-modifier 'none)
+(setq ns-alternate-modifier 'none)
+(setq ns-right-alternate-modifier 'meta)
