@@ -14,6 +14,11 @@ if v:progname =~? "evim"
   finish
 endif
 
+" fix issue with `black`
+if has('python3') && !has('patch-8.1.201')
+  silent! python3 1
+endif
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
