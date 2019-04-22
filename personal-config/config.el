@@ -13,3 +13,7 @@
 
 ;; Org-Mode statt Text verwenden
 (setq deft-default-extension "org")
+
+;; default tab-width
+(setq default-tab-width 4)
+
