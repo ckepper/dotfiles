@@ -37,6 +37,15 @@ alias ll="exa -alh"
 alias gst='git status'
 alias gc='git commit'
 
+# add mmv command
+# examples:
+#   mmv *.dat *.dat_old
+#   mmv foo.* bar.*
+#   mmv **/*2008.mp3 **/*2009.mp3
+autoload -U zmv
+alias mmv='noglob zmv -W'
+
+
 # keychain
 eval `keychain --eval --agents ssh --inherit any id_dsa id_ed25519`
 
