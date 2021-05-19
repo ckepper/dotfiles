@@ -91,7 +91,8 @@ cdpath=($HOME/repos/upp/ $HOME/repos/upp/platform/services $HOME/repos/upp/p    
 eval "$(direnv hook zsh)"
 # starship
 eval "$(starship init zsh)"
-
+# zoxide
+eval "$(zoxide init zsh)"
 # cdpath
 setopt auto_cd
 cdpath=($HOME $HOME/repos $HOME/repos/upp $HOME/repos/upp/platform $HOME/repos/upp/platform/services $HOME/repos/pp)
