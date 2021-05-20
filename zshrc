@@ -3,7 +3,7 @@ export PATH=$HOME/local/bin:/usr/local/bin:$PATH
 
 # zsh auto-completion
 autoload -Uz compinit && compinit 
-
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Python virtualenv
 
@@ -30,7 +30,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Personal aliases
 alias zshconfig="vim ~/.zshrc"
-alias dcp="docker-compose"
+alias dcp="docker compose"
 alias l="exa -l"
 alias la="exa -al"
 alias ll="exa -alh"
