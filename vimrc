@@ -117,10 +117,10 @@ Plugin 'gmarik/Vundle.vim'
 " Python auto-complete
 " ---------------------------
 "Plugin 'klen/python-mode'
-Plugin 'python-mode/python-mode'
+"Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'klen/rope-vim'
-"Plugin 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
 " ---------------------------
@@ -154,7 +154,7 @@ au BufNewFile,BufRead *.js, *.html, *.css, *.yml
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
-Plugin 'ambv/black'
+Plugin 'psf/black'
 
 " ---------------------------
 "  Syntax Highlighting
